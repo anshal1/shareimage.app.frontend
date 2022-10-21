@@ -1,0 +1,103 @@
+@media only screen and (max-width: 700px){
+    .main_signup_container{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .inputs{
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+    .inputs input{
+        margin: 1rem;
+        width: 60vw;
+        height: 50px;
+        border:  2px solid blue;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 8px;
+        outline: none;
+    }
+    .button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .button button{
+        margin: 20px;
+        padding: 10px;
+    }
+    label{
+        width: 70%;
+        text-align: start;
+        font-weight: 600;
+        transition: all .4s;
+    }
+    .inputs input:hover label{
+        text-align: end;
+    }
+}
+@media only screen and (min-width: 700px){
+    .main_signup_container{
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        padding: 1rem;
+    }
+    .inputs{
+        width: 100%;
+        height: fit-content;
+        padding: 1rem;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        /* background-color: red; */
+    }
+    .inputs input{
+        margin: 1rem;
+        width: 30vw;
+        height: 50px;
+        border:  2px solid blue;
+        padding: 10px;
+        font-size: 14px;
+        border-radius: 8px;
+        outline: none;
+        position: relative;
+    }
+    .placeholder{
+        position: absolute;
+    }
+    .button{
+        width: 100%;
+        display: flex;
+        align-items: center;
+        margin-top: 20px;
+        justify-content: space-evenly;
+        flex-wrap: wrap;
+    }
+    .button button{
+        margin: 20px;
+        padding: 10px;
+    }
+    label{
+        width: 30%;
+        text-align: start;
+        font-weight: 600;
+    }
+    .inputs input:hover label{
+        text-align: end;
+    }
+}

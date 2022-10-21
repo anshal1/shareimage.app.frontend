@@ -1,0 +1,19 @@
+@media only screen and (max-width: 700px) {
+  .myprogress {
+    width: 100%;
+    position: fixed;
+    z-index: 100;
+    top: 8rem;
+    left: 0px;
+    margin: 5px;
+  }
+}
+@media only screen and (min-width: 700px) {
+  .myprogress {
+    width: 50%;
+    position: fixed;
+    z-index: 100;
+    top: 5.5rem;
+    left: 20px;
+  }
+}

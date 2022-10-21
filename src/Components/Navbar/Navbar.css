@@ -1,0 +1,180 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&family=IBM+Plex+Sans&family=IBM+Plex+Serif&family=Kanit:wght@500&family=Nanum+Gothic:wght@400;700&family=Source+Sans+Pro&display=swap');
+@media only screen and (min-width: 700px) {
+    .main_navbar_co{
+        width: 100%;
+        height: 4.5rem;
+        background-color: white;
+        border-bottom: 1px solid rgba(199, 199, 199, 0.3);
+        display: flex;
+        position: fixed;
+        top: 0px;
+        z-index: 100;
+        align-items: center;
+        justify-content: space-between;
+        font-family: 'IBM Plex Sans', sans-serif;
+    } 
+    .others{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    .others p{
+        cursor: pointer;
+        font-size: 1rem;
+        font-weight: 600;
+        transition: all .3s;
+        margin: 0px;
+    }
+    .others_content:hover{
+        transform: translateX(5px);
+    }
+    .for_phone_navbar{
+        display: none;
+    }
+    .brand_logo_name h2{
+        cursor: pointer;
+        margin: 0px;
+        margin-left: 15px;
+    }
+    #share{
+        background: -webkit-linear-gradient(rgb(255, 168, 142), rgb(182, 255, 46));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* background-clip: content-box; */
+    }
+    #my{
+        background: -webkit-linear-gradient(rgb(255, 225, 142), rgb(46, 255, 126));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* background-clip: content-box */
+    }
+    #image{
+        background: -webkit-linear-gradient(rgb(142, 255, 180), rgb(46, 178, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        /* background-clip: content-box */
+    }
+    #others_content_specific{
+        padding: 10px;
+        background-image: linear-gradient(120deg, rgb(255, 208, 0), rgb(255, 255, 255));
+        background-repeat: no-repeat;
+        color: rgb(255, 255, 255);
+        transition: all .3s;
+        text-shadow: 0px 0px 2px rgb(0, 0, 0);
+        border-radius: 7px;
+    }
+    #others_content_specific:hover{
+        padding: 10px;
+        background-image: linear-gradient(120deg, rgb(255, 255, 255), rgb(255, 208, 0));
+        background-repeat: no-repeat;
+        color: black;
+        text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    }
+} 
+
+@media only screen and (max-width: 700px) {
+    .main_navbar_co{
+        width: 100%;
+        height: 4.5rem;
+        background-color: white;
+        border-bottom: 1px solid rgba(199, 199, 199, 0.3);
+        display: flex;
+        position: fixed;
+        top: 0px;
+        z-index: 100;
+        align-items: center;
+        justify-content: space-around;
+        font-family: 'IBM Plex Sans', sans-serif;
+    } 
+    .brand_logo_name{
+        display: flex;
+        width: 50%;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    .others{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 50%;
+    }
+    .others p{
+        cursor: pointer;
+        font-size: 1.2rem;
+        font-weight: 600;
+        transition: all .3s;
+    }
+    .others_content{
+        display: none;
+    }
+    .others_content:hover{
+        transform: translateX(5px);
+    }
+    .for_phone_navbar{
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+        width: 100%;
+        height: fit-content;
+        padding: 10px;
+        position: fixed;
+        top: 4.5rem;
+        z-index: 100;
+        font-family: 'IBM Plex Sans', sans-serif;
+        background-color: white;
+    }
+    .for_phone_navbar p{
+        padding: 10px;
+        background-color: rgb(233, 233, 233);
+        border-radius: 5px;
+        transition: all .3s;
+        cursor: pointer;
+    }
+    .for_phone_navbar p:hover{
+        background-color: rgb(202, 202, 202);
+    }
+    #share{
+        background: -webkit-linear-gradient(rgb(255, 168, 142), rgb(182, 255, 46));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 18px;
+        /* background-clip: content-box; */
+    }
+    #my{
+        background: -webkit-linear-gradient(rgb(255, 225, 142), rgb(46, 255, 126));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 18px;
+        /* background-clip: content-box */
+    }
+    #image{
+        background: -webkit-linear-gradient(rgb(142, 255, 180), rgb(46, 178, 255));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        font-size: 18px;
+        /* background-clip: content-box */
+    }
+    #others_content_specific{
+        padding: 10px;
+        background-image: linear-gradient(120deg, rgb(255, 208, 0), rgb(255, 255, 255));
+        background-repeat: no-repeat;
+        color: rgb(255, 255, 255);
+        transition: all .3s;
+        text-shadow: 0px 0px 2px rgb(0, 0, 0);
+        border-radius: 7px;
+    }
+    #others_content_specific:hover{
+        padding: 10px;
+        background-image: linear-gradient(120deg, rgb(255, 255, 255), rgb(255, 208, 0));
+        background-repeat: no-repeat;
+        color: black;
+        text-shadow: 0px 0px 2px rgb(255, 255, 255);
+    }
+}
