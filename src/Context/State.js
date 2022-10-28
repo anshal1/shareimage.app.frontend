@@ -61,11 +61,13 @@ const State = (props) => {
         if (!res.error) {
             setallimage(allimage.concat(res.post));
             setnextpage(res.isNextPage);
+            setpage_loading(false)
         } else {
             setalert({
                 display: "display",
                 msg: res.error.error_msg
             })
+            setpage_loading(false)
         }
     }
     const likeImage = async () => {
