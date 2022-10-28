@@ -196,7 +196,7 @@ const Home = () => {
   };
   return (
     <>
-      <h2 style={{ textAlign: "center" }}>
+      <h2 style={{ textAlign: "center", boxShadow: "3px 3px 12px rgba(0,0,0,.3)", padding:"10px" }}>
         {capitalize(currently_watching)} images
       </h2>
       {loading ? (
@@ -264,7 +264,7 @@ const Home = () => {
           </div>
         </div>
       )}
-      {nextpage ? (
+      {nextpage && !loading ? (
         <div className="next">
           <button
             className="LoadMore"

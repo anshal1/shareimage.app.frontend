@@ -26,13 +26,21 @@ const ImageCard = (props) => {
           {props.include ? (
             <p className="options_content" onClick={props.dislike}>
               <span>
-                <i className="fa-solid fa-heart text-primary"></i>
+                <i className="fa-solid fa-heart text-primary" onClick={(e)=>{
+                  if(e.target.className === "fa-solid fa-heart text-primary"){
+                    e.target.classList = "fa-solid fa-heart"
+                  }
+                }}></i>
               </span>
             </p>
           ) : (
             <p className="options_content" onClick={props.like}>
               <span>
-                <i className="fa-regular fa-heart"></i>
+                <i className="fa-regular fa-heart" onClick={(e)=>{
+                  if(e.target.className === "fa-solid fa-heart"){
+                    e.target.classList = "fa-solid fa-heart text-primary"
+                  }
+                }}></i>
               </span>
             </p>
           )}

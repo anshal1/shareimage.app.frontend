@@ -44,6 +44,7 @@ const State = (props) => {
         }
     }
     const allImage_newPage = async () => {
+        setpage_loading(true);
         if (!nextpage) {
             return;
         }
