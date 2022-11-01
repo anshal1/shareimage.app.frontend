@@ -15,6 +15,7 @@ const ImageCard = (props) => {
             onLoad={(e) => {
               e.target.innerHTML = "Loading...";
             }}
+            loading="lazy"
           />
           <div className="imageInfo">
             <h3>Uploaded by-: {props.uploader}</h3>
