@@ -196,9 +196,9 @@ const Home = () => {
   };
   return (
     <>
-      <h2 style={{ textAlign: "center", boxShadow: "3px 3px 12px rgba(0,0,0,.3)", padding:"10px" }}>
+      <h5 style={{ textAlign: "center", marginTop: "10px" }}>
         {capitalize(currently_watching)} images
-      </h2>
+      </h5>
       {loading ? (
         <div
           style={{
@@ -213,16 +213,6 @@ const Home = () => {
         </div>
       ) : (
         <div className="main_home_container" id="id" ref={scrollRef}>
-          {/* <InfiniteScroll
-          pageStart={1}
-          loadMore={setpage(page+1)}
-          hasMore={nextpage}
-          loader={
-            <div className="loader" key={0}>
-              Loading ...
-            </div>
-          }
-        > */}
           {allimage?.map((e) => {
             return (
               <ImageCard
@@ -251,6 +241,11 @@ const Home = () => {
               />
             );
           })}
+          {!nextpage ? (
+            <h5 style={{ textAlign: "center" }}>You have seen it all</h5>
+          ) : (
+            ""
+          )}
           {allimage.length < 1 ? <h1>No Images Available</h1> : ""}
           {/* </InfiniteScroll> */}
           <div className="share_image">
