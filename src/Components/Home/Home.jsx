@@ -241,11 +241,6 @@ const Home = () => {
               />
             );
           })}
-          {!nextpage ? (
-            <h5 style={{ textAlign: "center" }}>You have seen it all</h5>
-          ) : (
-            ""
-          )}
           {allimage.length < 1 ? <h1>No Images Available</h1> : ""}
           {/* </InfiniteScroll> */}
           <div className="share_image">
