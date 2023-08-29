@@ -6,6 +6,9 @@
     top: 8rem;
     left: 0px;
     margin: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
 @media only screen and (min-width: 700px) {
@@ -15,5 +18,8 @@
     z-index: 100;
     top: 5.5rem;
     left: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
