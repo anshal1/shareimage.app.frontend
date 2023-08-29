@@ -72,16 +72,6 @@ const Login = () => {
         </div>
         <div className="button">
           <button
-            onClick={() => {
-              setalert({
-                display: "display",
-                msg: "Google auth is currently under-development",
-              });
-            }}
-          >
-            SignUp with Google
-          </button>
-          <button
             style={{ color: "blue" }}
             onClick={() => {
               navi("/auth/signup");
